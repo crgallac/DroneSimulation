@@ -13,7 +13,7 @@ l=scale*5;
 L=scale*6.5;
 d=scale*1.78;
 d1=scale*3.0; 
-angle_d1=0;
+angle_d1=pi/2;
 orgn_d1=[0;0; 8.6;];
 R1=[0 -1 0; 0 0 1; -1 0 0;];
 Rphi=[cos(angle_d1) -sin(angle_d1) 0;sin(angle_d1) cos(angle_d1) 0; 0 0 1];
@@ -21,10 +21,8 @@ Rphi=[cos(angle_d1) -sin(angle_d1) 0;sin(angle_d1) cos(angle_d1) 0; 0 0 1];
 
 % Cdvw=[-1 0 0; 0 0 1; 0 1 0;]; 
 Cuav_d=[1 0 0; 0 1 0; 0 0 1;]; 
-Cvw_uav=[-1 0 0; 0 0 1; 0 1 0;]; %[0 0 -1; 0 1 0; 1 0 0;]*
-originOffset= [-.5 6 9.6]; %in centimeters
+Cvw_uav=[-1 0 0; 0 1 0; 0 0 1;]; 
+originOffset= [1 7 9]; %in centimeters
 %Demo Params
-% redBallRadius= 2.5; 
-radiusAvatar=.2;
-navSphere=1; 
-Obstacles=[0 5 -10 0 500 -11 2 -6 500 -11 4];
+redBallRadius= 2.5; 
+radiusAvatar=.2; 
